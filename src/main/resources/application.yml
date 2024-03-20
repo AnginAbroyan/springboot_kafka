@@ -10,7 +10,7 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:5432/project_springboot
     username: postgres
-    password: Klaus67phobia26!
+    password: "*****"
     driver-class-name: org.postgresql.Driver
   jpa:
     open-in-view: false
