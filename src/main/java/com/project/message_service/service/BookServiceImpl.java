@@ -1,4 +1,4 @@
-package com.project.message_service.service.impl;
+package com.project.message_service.service;
 
 
 import com.project.message_service.model.domain.BookEntity;

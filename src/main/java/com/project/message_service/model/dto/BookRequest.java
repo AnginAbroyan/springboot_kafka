@@ -4,7 +4,6 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Objects;
 
 @Setter
 @Getter
@@ -36,16 +35,4 @@ public class BookRequest {
                 '}';
     }
 
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        BookRequest that = (BookRequest) o;
-        return Double.compare(price, that.price) == 0 && Objects.equals(name, that.name) && Objects.equals(author, that.author) && Objects.equals(description, that.description);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(name, author, description, price);
-    }
 }
